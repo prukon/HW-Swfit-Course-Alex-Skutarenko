@@ -302,3 +302,8 @@ var test: Test? = Test.init()
 test?.bestFriend = nil
 
 var f5 = Friend(name: "")
+
+
+init(isElectro: Bool){
+    self.isElectro = isElectro
+}
