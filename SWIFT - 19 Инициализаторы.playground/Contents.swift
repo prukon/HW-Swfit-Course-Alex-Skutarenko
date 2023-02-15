@@ -130,7 +130,8 @@ let stundent7 = Student(firstName: "Вася")
 //Правило 2
 //Если в дочернем классе есть собственный designated, то дочерний класс перестает наследовать все designated и convenience родителя.
 
-//1 способ наследования всех свойств родителя. Наследование работает, потому что нет своего   designated и есть только convenience.
+//1 способ
+//Наследования всех свойств родителя. Наследование работает, потому что нет своего  designated и есть только convenience.
 class Doctor: Student {
     var fieldOfStudy = ""
     
@@ -147,7 +148,8 @@ class Doctor: Student {
 var doctor = Doctor.init(fieldOfStudy: "1")
 doctor.firstName = "Вася"  //доступны все методы родителя
 
-//2 способ наследования всех свойств родителя через переопределение designated родителя. Наследование работает, потому что переопределен designated родителя.
+//2 способ
+//Наследования всех свойств родителя через переопределение designated родителя. Наследование работает, потому что переопределен designated родителя.
 class Doctor2: Student {
     var fieldOfStudy = ""
     init (fieldOfStudy: String) {
@@ -164,8 +166,6 @@ var doctor2 = Doctor2.init(fieldOfStudy: "2")
 doctor2.firstName = "Петя" //доступны все методы родителя
 
 //3 способ
-
-
 class Doctor3: Student {
     var fieldOfStudy: String
     var old : String
