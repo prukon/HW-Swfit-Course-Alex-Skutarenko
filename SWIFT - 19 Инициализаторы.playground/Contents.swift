@@ -104,6 +104,8 @@ let h3 = Human()
 
 // часть 2
 
+
+
 class Student: Human {
     var firstName: String
     var lastName: String

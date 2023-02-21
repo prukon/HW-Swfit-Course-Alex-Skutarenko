@@ -147,12 +147,12 @@ print ("----")
 //task4
 class Human {
     var name: String {
-        [
+        
             didSet {
                 if name.count >  20 {
                     name = oldValue
                 }
-        ]
+        
         }
     }
     var secondName: String
@@ -176,8 +176,6 @@ class Human {
             }
         }
     }
-    
-   
     init (name:String, secondName: String, age: Int, height: Double, weight: Double) {
         self.name = name
         self.secondName = secondName
@@ -188,6 +186,8 @@ class Human {
 }
 var person1 : Human = .init(name: "Вася", secondName: "Иванов", age: 22, height: 1270, weight: 60)
 print(person1.height = 300)
+person1.height = 300
+person1.height = 40
 print(person1.height)
 print(person1.weight)
 person1.name = "123sd ada ds ds dssd adal ka ladsldksa jgej j"
